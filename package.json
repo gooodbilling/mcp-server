@@ -1,0 +1,56 @@
+{
+  "name": "@gooodbilling/mcp-server",
+  "version": "0.1.13",
+  "description": "GooodBilling 公式 MCP Server — Claude Desktop / Cursor 等の MCP 対応クライアントから AI ファーストで請求書・見積を操作する",
+  "type": "module",
+  "license": "MIT",
+  "author": "GooodBilling <desktop7788@gmail.com>",
+  "homepage": "https://gooodbilling.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gooodbilling/mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gooodbilling/mcp-server/issues"
+  },
+  "bin": {
+    "gooodbilling-mcp": "dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "gooodbilling",
+    "billing",
+    "invoice",
+    "quote",
+    "ai",
+    "claude",
+    "cursor"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

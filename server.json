@@ -1,0 +1,36 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.gooodbilling/mcp-server",
+  "description": "GooodBilling 公式 MCP Server — Claude Desktop / Cursor 等の MCP 対応クライアントから AI ファーストで請求書・見積を操作する",
+  "status": "active",
+  "version": "0.1.13",
+  "repository": {
+    "url": "https://github.com/gooodbilling/mcp-server",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registry_type": "npm",
+      "registry_base_url": "https://registry.npmjs.org",
+      "identifier": "@gooodbilling/mcp-server",
+      "version": "0.1.13",
+      "transport": {
+        "type": "stdio"
+      },
+      "environment_variables": [
+        {
+          "name": "GOOODBILLING_API_TOKEN",
+          "description": "GooodBilling API トークン (gb_live_...)。https://gooodbilling.com/settings/api-tokens で発行",
+          "is_required": true,
+          "is_secret": true
+        },
+        {
+          "name": "GOOODBILLING_API_BASE_URL",
+          "description": "API ベースURL。任意。既定は https://gooodbilling.com",
+          "is_required": false,
+          "is_secret": false
+        }
+      ]
+    }
+  ]
+}
