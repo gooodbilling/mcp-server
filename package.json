@@ -1,6 +1,7 @@
 {
   "name": "@gooodbilling/mcp-server",
-  "version": "0.1.13",
+  "version": "0.1.14",
+  "mcpName": "io.github.gooodbilling/mcp-server",
   "description": "GooodBilling 公式 MCP Server — Claude Desktop / Cursor 等の MCP 対応クライアントから AI ファーストで請求書・見積を操作する",
   "type": "module",
   "license": "MIT",
